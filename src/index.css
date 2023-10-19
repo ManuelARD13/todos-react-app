@@ -4,5 +4,10 @@
 }
 
 body {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.completed {
+  text-decoration: line-through;
 }
