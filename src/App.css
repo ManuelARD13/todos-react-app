@@ -1,0 +1,22 @@
+@media (max-width: 700px) {
+  .TODOs-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .PlusCircle-icon {
+    width: 25vw;
+    position: absolute;
+    bottom: 12vw;
+    right: 5vw;
+    z-index: 1;
+    color: white;
+    background-color: #92B4EC;
+    border-radius: 100%;
+    box-shadow: -0.5px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+}

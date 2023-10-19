@@ -1,0 +1,50 @@
+@media (max-width: 700px) {
+
+  .TODO-card {
+    display: grid;
+    grid-template-columns: auto 10vw;
+    align-items: center;
+    width: 77vw;
+    height: 8vh;
+    /* border: 1px solid gray; */
+    border-radius: 2vw;
+    padding: 0 4vw;
+    position: relative;
+    background-color: #ffe69aa2;
+    color: rgb(63, 63, 63);
+  }
+
+  .TODO-card p {
+    grid-column: 1/span 1;
+    font-size: 1.3rem;
+  }
+
+  .XCircle-icon-container {
+    width: 10vw;
+    position: absolute;
+    top: -2.5vh;
+    right: -4vw;
+    color: gray;
+  }
+
+  .XCircle-icon {
+    background-color: #ffe69aa2;
+    border-radius: 100vw;
+    box-shadow: -2px 4px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .XCircle-icon-container:hover, .XCircle-icon-container:active {
+    color: red;
+  }
+
+  .CheckCircle-icon-container {
+    width: 11vw;
+    grid-column: 2/span 1;
+    color: gray;
+  }
+
+  .CheckCircle-icon-container:hover, .CheckCircle-icon-container:active {
+    color: green;
+  }
+
+}

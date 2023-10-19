@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import SearchBar from "./components/TODOSearch/TODOSearch";
 import TODOCard from "./components/TODOCard/TODOCard";
 import TODOCounter from "./components/TODOCounter/TODOCounter";
-import Modal from "./common/Modal/Modal";
 import TODOForm from "./components/TODOForm/TODOForm";
 import TODOSearch from "./components/TODOSearch/TODOSearch";
+import Modal from "./common/Modal/Modal";
+
+import { PlusCircleIcon } from "@heroicons/react/24/outline";
+
+import "./App.css"
 
 function App() {
   const [userInput, setUserInput] = useState("");
@@ -52,6 +55,7 @@ function App() {
       <div>
         <TODOCounter TODOs={TODOs} />
         <TODOSearch setUserInput={setUserInput} />
+        <div className="TODOs-container">
         {searchedTODOs.map((todo, index) => {
           return (
             <TODOCard
@@ -62,7 +66,10 @@ function App() {
             />
           );
         })}
-        <div onClick={() => setModalOpen(true)}>+</div>
+        </div>
+        <div onClick={() => setModalOpen(true)}>
+          <PlusCircleIcon className="PlusCircle-icon" />
+        </div>
       </div>
       {
         isModalOpen 

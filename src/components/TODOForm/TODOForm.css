@@ -1,0 +1,56 @@
+@media (max-width: 700px) {
+  .TODOForm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 35vh;
+    border-radius: 3vw;
+    background-color: #92B4EC;
+    padding: 2vh;
+  }
+
+  .TODOForm-container p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+  }
+
+  .input-container {
+    width: 95%;
+    height: 50%;
+    margin-top: 2vh;
+  }
+
+  .input-container textarea {
+    width: 93%;
+    height: 90%;
+    text-align: start;
+    border-radius: 2vw;
+    padding: 2vw;
+    font-size: 1.2rem;
+  }
+
+  .input-container textarea::placeholder {
+    padding: 2vw;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    width: 95%;
+    height: 15%;
+    margin: 2vh 0;
+  }
+
+  .TODOForm-container button {
+    width: 100%;
+    border-radius: 1.5vw;
+    border: none;
+    font-size: 1.1rem;
+    background-color: #FFE69A;
+  }
+}

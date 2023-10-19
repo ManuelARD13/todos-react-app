@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./TODOForm.css"
+
 function TODOForm({ TODOs, setTODOs, setModalOpen }) {
 
   const [ userInput, setUserInput ] = useState("");
@@ -16,13 +18,16 @@ function TODOForm({ TODOs, setTODOs, setModalOpen }) {
     setModalOpen(false);
   }
   return (
-    <form>
+    <form className="TODOForm-container">
       <div>
-        <input type="text" name="" placeholder={"Things to do..."} onChange={(e) => setUserInput(e.target.value)} />
+        <p>What do you gonna do next!?</p>
       </div>
-      <div>
+      <div className="input-container">
+        <textarea type="text" name="" placeholder={"Things to do..."} onChange={(e) => setUserInput(e.target.value)} />
+      </div>
+      <div className="buttons-container">
         <button>Cancel</button>
-        <button type="submit" onClick={handleSubmit}>Create TODO</button>
+        <button type="submit" onClick={handleSubmit}>Create</button>
       </div>
     </form>
   );

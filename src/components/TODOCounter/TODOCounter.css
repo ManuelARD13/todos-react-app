@@ -1,0 +1,20 @@
+@media (max-width: 700px) {
+  .TODOCounter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 4vh;
+    padding: 3.5vh 2vw;
+    font-size: 1.5rem;
+    background-color: #FFD24C;
+    box-shadow: -2px 4px 6px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .TODOCounter-container span {
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+}
+
